@@ -1,0 +1,21 @@
+exportPattern("^[[:alpha:]]+")
+
+import(
+    igraph,
+    methods,
+    sp
+)
+
+importFrom("graphics", "text")
+importFrom("rgeos", "gIntersection","gWithinDistance")
+importFrom("shape", "Arrowhead")
+importFrom("splancs", "n2dist")
+importFrom("stats", "approx")
+
+export(
+       SpatialGraph
+)
+
+exportClasses(
+       SpatialGraph
+)

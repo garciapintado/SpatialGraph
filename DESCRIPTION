@@ -1,0 +1,13 @@
+Package: SpatialGraph
+Type: Package
+Title: SpatialGraph Class
+Version: 1.0-1
+Date: 2018-10-25
+Imports: igraph, methods, rgeos, shape, sp, splancs
+Author: Javier Garcia-Pintado
+Maintainer: Javier Garcia-Pintado <jgarciapintado@marum.de>
+Description: Provision of the S4 SpatialGraph class built on top of objects provided by igraph and sp packages,
+    and utilities for SpatialGraph objects and mapping between igraph, sp and SpatialGraph. See the documentation
+    of the SpatialGraph-class within this pakage for further description. An example of how from a few points one can arrive
+    to a SpatialGraph is provided in the function sl2sg.  
+License: GPL (>=2)
