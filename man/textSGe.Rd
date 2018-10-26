@@ -18,7 +18,5 @@ textSGe(SG, acol='wheat', tcol='navyblue', arr.length=0.4)
 \value{
  Arrows and edge \code{IDs} added to a \link{SpatialGraph} plot
 }
-\author{Javier Garcia-Pintado, e-mail:
-  \email{j.garcia-pintado@marum.de}}
 \keyword{ utilities }
 \keyword{ spatial }

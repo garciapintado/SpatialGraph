@@ -14,6 +14,5 @@ explodeSLDF(SLDF, FID)
 \value{
   a SpatialLinesDataFrame
 }
-\author{Javier Garcia-Pintado, e-mail: \email{j.garcia-pintado@reading.ac.uk}}
 \keyword{ utilities }
 \keyword{ spatial }

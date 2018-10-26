@@ -13,7 +13,7 @@
 The DESCRIPTION file:
 \packageDESCRIPTION{SpatialGraph}
 \packageIndices{SpatialGraph}
-~~ An overview of how to use the package ~~
+see the documentation of the function sl2sg in this package to get a start
 }
 \author{
 \packageAuthor{SpatialGraph}
@@ -22,8 +22,7 @@ Maintainer: \packageMaintainer{SpatialGraph}
 }
 \references{
 The first published application of this package is
-Garcia-Pintado, J., Mason, D.C., Dance, S.L.,  Cloke, H.L., Neal, J.C.,
-Freer. J., Bates, P.D., 2015. Satellite-supported flood forecasting in
+Garcia-Pintado, J. et al. (2015). Satellite-supported flood forecasting in
 reiver networks: a real case study. J. Hydrol. 523, 705-724.
 }
 \keyword{ package }

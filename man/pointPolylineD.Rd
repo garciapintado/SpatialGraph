@@ -16,7 +16,6 @@ pointPolylineD(xy, xyp)
 \value{
  A \code{data.frame} with the columns: \code{inode} is the index of the first node in the closest segment to each point, \code{x0} and \code{y0} are the corresponding coordinates of those nodes, \code{xc} and \code{yc} are the coordinates of the point in the polyline closest to each point in \code{xyp}, these may be but are not necessarily one the polyline nodes, \code{dis} it the distance from each point tho the polyline, \code{chain0} is the chainage of \code{x0,y0} with the polyline, and \code{dc} is the differential chainage from \code{xc,yc} to \code{x0,y0}
 }
-\author{Javier Garcia-Pintado}
 \seealso{\code{\link[sp]{Spatial-class}}}
 \keyword{ utilities }
 \keyword{ spatial }

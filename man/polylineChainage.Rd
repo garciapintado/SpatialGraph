@@ -17,8 +17,6 @@ polylineChainage(xy)
 \value{
   A vector
 }
-\author{Javier Garcia-Pintado, e-mail:
-  \email{j.garcia-pintado@reading.ac.uk}}
 \seealso{\code{\link{polylineLength}}}
 \keyword{ utilities }
 \keyword{ spatial }

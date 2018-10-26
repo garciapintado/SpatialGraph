@@ -30,6 +30,8 @@ A \code{SpatialGraph}
   #  x   y
   # create list of Line objects
  if (1 > 2) {
+  library(sp)
+  library(SpatialGraph)
   zz <- list()
   zz[[1]] <- Line(matrix(
    c(661750, 4229150,
@@ -65,5 +67,7 @@ A \code{SpatialGraph}
   SG@path[1,3]
  }
 }
+\author{Javier Garcia-Pintado, e-mail:
+  \email{j.garcia-pintado@marum.de}}
 \keyword{ utilities }
 \keyword{ spatial }

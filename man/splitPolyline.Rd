@@ -25,7 +25,6 @@ splitPolyline(xy, xyp, dmax)
 \value{
  A list in which each element is a matrix representing an individual polyline
 }
-\author{Javier Garcia-Pintado}
 \seealso{\code{\link[sp]{Spatial-class}}}
 \keyword{ utilities }
 \keyword{ spatial }

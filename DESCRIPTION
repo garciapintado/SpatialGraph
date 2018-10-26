@@ -8,6 +8,7 @@ Author: Javier Garcia-Pintado
 Maintainer: Javier Garcia-Pintado <jgarciapintado@marum.de>
 Description: Provision of the S4 SpatialGraph class built on top of objects provided by igraph and sp packages,
     and utilities for SpatialGraph objects and mapping between igraph, sp and SpatialGraph. See the documentation
-    of the SpatialGraph-class within this pakage for further description. An example of how from a few points one can arrive
+    of the SpatialGraph-class within this package for further description. An example of how from a few points one can arrive
     to a SpatialGraph is provided in the function sl2sg.  
 License: GPL (>=2)
+URL: https://github.com/garciapintado/SpatialGraph

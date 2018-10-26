@@ -31,7 +31,6 @@ splitSLDF(SLDF, SPDF, dmax=NULL)
 \value{
  A SpatialLinesDataFrame or a SpatialLines, according to the input
 }
-\author{Javier Garcia-Pintado}
 \seealso{\code{\link[sp]{Spatial-class}}}
 \keyword{ utilities }
 \keyword{ spatial }

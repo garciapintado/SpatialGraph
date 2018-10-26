@@ -13,5 +13,4 @@ rotation(coords, radian)
 }
 \value{a 2-col matrix with the points rotated around [0,0]
 }
-\author{Javier Garcia-Pintado}
 \keyword{ utilities }
