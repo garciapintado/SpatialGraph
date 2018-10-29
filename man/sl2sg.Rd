@@ -2,7 +2,8 @@
 \alias{sl2sg}
 \title{map a SpatialLinesDataFrame into a SpatialGraph}
 \description{
-  This function is the major workhorse to map an input \code{SpatialLinesDataFrame} into a
+  This function is the major workhorse to map an input
+  \code{SpatialLinesDataFrame}, as defined in the package sp, into a
   \code{SpatialGraph} by using the spatial connectivity. Input is first
   exploded by using \code{\link{explodeSLDF}}, and then all vertices in the
   \code{SpatialGraph} are automatically generated according to crossings
@@ -12,7 +13,7 @@
 sl2sg(SL, clipd = NULL, getdist = TRUE, getpath = FALSE)
 }
 \arguments{
-  \item{SL}{\code{SpatialLinesDataFrame}}
+  \item{SL}{\code{SpatialLinesDataFrame} as defined in package sp}
   \item{clipd}{distance threshold for clipping features, If NULL, a
     value of 1.0E-04 of the domain side size is used}
   \item{getdist}{calculate the \code{dist} slot in the returned
