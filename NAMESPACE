@@ -7,7 +7,7 @@ import(
 )
 
 importFrom("graphics", "text")
-importFrom("rgeos", "gIntersection","gWithinDistance")
+importFrom("rgeos", "gDistance", "gIntersection","gWithinDistance")
 importFrom("shape", "Arrowhead")
 importFrom("splancs", "n2dist")
 importFrom("stats", "approx")
