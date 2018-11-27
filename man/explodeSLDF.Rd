@@ -1,8 +1,8 @@
 \name{explodeSLDF}
 \alias{explodeSLDF}
-\title{Explode Lines in a SpatialGridDataFrame}
-\description{explode Lines in a SpatialGridDataFrame, so that each single Line, within each Lines slot, is upgraded
-as a new 1-Line Lines slot
+\title{Explode Lines in a SpatialLinesDataFrame}
+\description{explode Lines in a SpatialLinesDataFrame, so that each
+  single Line, within each Lines slot, is upgraded as a new 1-Line Lines slot
 }
 \usage{
 explodeSLDF(SLDF, FID)

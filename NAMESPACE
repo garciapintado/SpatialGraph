@@ -1,4 +1,4 @@
-exportPattern("^[[:alpha:]]+")
+#exportPattern("^[^\\.]")
 
 import(
     igraph,
@@ -13,7 +13,26 @@ importFrom("splancs", "n2dist")
 importFrom("stats", "approx")
 
 export(
-       SpatialGraph
+       attSGe,
+       distSGv,
+       explodeSLDF,
+       pointLineD,
+       pointOnLine,
+       pointOnSegment,
+       pointPolylineD,
+       pointsToLines,
+       polylineChainage,
+       polylineLength,
+       revSGe,
+       rotation,
+       routeSDG,
+       sg2igraph,
+       sgChVIDs,
+       sl2sg,
+       SpatialGraph,
+       splitPolyline,
+       splitSLDF,
+       textSGe
 )
 
 exportClasses(
