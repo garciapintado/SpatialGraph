@@ -1,6 +1,6 @@
 \name{sl2sg}
 \alias{sl2sg}
-\title{map a SpatialLinesDataFrame into a SpatialGraph}
+\title{Map a SpatialLinesDataFrame into a SpatialGraph}
 \description{
   This function is the major workhorse to map an input
   \code{SpatialLinesDataFrame}, as defined in the package sp, into a

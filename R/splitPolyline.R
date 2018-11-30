@@ -21,7 +21,7 @@ splitPolyline <- function(xy, xyp, dmax) {
   xyp <- unique(xyp)                              # remove possible duplicates
   pcha <- polylineChainage(xy)                    # polyline chainage at nodes
   plen <- polylineLength(xy)                      # polyline length
-  xyc  <- pointPolylineD(xy,xyp)                  # chainage table
+  xyc  <- pointsPolylineD(xy,xyp)                  # chainage table
 
   isfar <- xyc[,'dis'] > dmax
   xyc  <- xyc[,'chain0'] + xyc[,'dc']             # chainages

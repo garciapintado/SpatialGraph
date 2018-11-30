@@ -1,11 +1,11 @@
-pointPolylineD <- function(xy, xyp) {
+pointsPolylineD <- function(xy, xyp) {
   # +++ purpose +++
   # obtain the closest points in a polyline to a set of point/s
   # xy  (I) : n x 2 matrix of the segment coordinates which define the polyline
   # xyp (I) : p x 2 matrix of the external points to estimate distances to the line
   #
   # details: first the distance from the set of points to the lines defined by every single segment in the polyline
-  # is obtained, then the distance to every single node in the polyline are also obtained. The lower distance is chosen.
+  # is obtained, then the distance to every single node in the polyline are also obtained. The lowest distance is chosen.
 
   if (class(xyp) == 'data.frame')
    xyp <- as.matrix(xyp)

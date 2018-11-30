@@ -7,6 +7,7 @@ import(
 )
 
 importFrom("graphics", "text")
+importFrom("pracma",   "distmat")
 importFrom("rgeos", "gDistance", "gIntersection","gWithinDistance")
 importFrom("shape", "Arrowhead")
 importFrom("splancs", "n2dist")
@@ -14,12 +15,14 @@ importFrom("stats", "approx")
 
 export(
        attSGe,
+       distSG,
        distSGv,
        explodeSLDF,
        pointLineD,
        pointOnLine,
        pointOnSegment,
-       pointPolylineD,
+       pointsPolylineD,
+       pointsSLDFchain,
        pointsToLines,
        polylineChainage,
        polylineLength,
