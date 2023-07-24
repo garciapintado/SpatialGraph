@@ -8,7 +8,8 @@ import(
 
 importFrom("graphics", "text")
 importFrom("pracma",   "distmat")
-importFrom("rgeos", "gDistance", "gIntersection","gWithinDistance")
+#importFrom("rgeos", "gDistance", "gIntersection","gWithinDistance")
+importFrom("sf", "st_coordinates", "st_distance", "st_intersection", "st_is_within_distance")
 importFrom("shape", "Arrowhead")
 importFrom("splancs", "n2dist")
 importFrom("stats", "approx")

@@ -1,6 +1,7 @@
 pointsToLines <- function (points, lines, withAttrs = TRUE, withDis = TRUE, withChain = TRUE) {
     # browser()
     #require("rgeos")
+    #require("sf")
     # points :: SPDF, SP, or 2-col matrix
     # lines  :: SpatialLinesDataFrame
     if (!is(points, "SpatialPointsDataFrame")) { # i.e. 'SpatialPoints' or 'matrix'
@@ -10,14 +11,15 @@ pointsToLines <- function (points, lines, withAttrs = TRUE, withDis = TRUE, with
         stop("withAttrs = TRUE just available for SpatialPointsDataFrame objects")
     }
     #if (!is.na(maxDist)) {
-    #    w = gWithinDistance(points, lines, dist = maxDist, byid = TRUE)
+    #    w = gWithinDistance(points, lines, dist = maxDist, byid = TRUE) # rgeos::              
+    #    w = sf::st_is_within_distance(as(points, "sf"), as(lines, "sf"), dist = maxDist) # sf::
     #    validPoints = apply(w, 2, any)
     #    validLines = apply(w, 1, any)
     #    points = points[validPoints, ]
     #    lines = lines[validLines, ]
     #}
     if (is(points,'matrix')) {
-      coordsPoints <- points[,1:2,drop=FALSE]
+      coordsPoints <- points[,1:2, drop=FALSE]
       points <- as.data.frame(coordsPoints)
       names(points) <- c('x','y')
       coordinates(points) <- c('x','y')
@@ -25,9 +27,13 @@ pointsToLines <- function (points, lines, withAttrs = TRUE, withDis = TRUE, with
       coordsPoints = coordinates(points)
     }
     n = length(points)
-    d = gDistance(points, lines, byid = TRUE)                                          # [m,n] matrix, m= number of lines
-    nearest_line_index = apply(d, 2, which.min)
-    d = apply(d, 2, min)
+    #d = gDistance(points, lines, byid = TRUE)                                          # [m,n] matrix, m= number of lines
+    #nearest_line_index = apply(d, 2, which.min) # []
+    #d = apply(d, 2, min)
+    # browser()
+    d = st_distance(as(points, "sf"), as(lines, "sf"), by_element = FALSE)              # [n,m] matrix, m= number of lines
+    nearest_line_index = apply(d, 1, which.min) # [n]
+    d = apply(d, 1, min)                        # [n]
 
     coordsLines = coordinates(lines)
 
